@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="#16619E"
+    android:layout_marginTop="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:padding="26dp"
+        android:paddingBottom="26dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/displayDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/deploymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/displayDescription"
+                app:layout_constraintTop_toBottomOf="@+id/displayDescription" />
+
+            <TextView
+                android:id="@+id/displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deploymentDate" />
+
+
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/deployedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/description"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/displayName"
+                app:layout_constraintTop_toBottomOf="@+id/displayName"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/id_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/deployedBy"
+                app:layout_constraintTop_toBottomOf="@+id/deployedBy" />
+
+
+            <TextView
+                android:id="@+id/activationState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/id_"
+                app:layout_constraintTop_toBottomOf="@+id/id_" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/activationState"
+                app:layout_constraintTop_toBottomOf="@+id/activationState" />
+
+            <TextView
+                android:id="@+id/configurationState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/version"
+                app:layout_constraintTop_toBottomOf="@+id/version" />
+
+
+            <TextView
+                android:id="@+id/last_update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/configurationState"
+                app:layout_constraintTop_toBottomOf="@+id/configurationState" />
+
+            <TextView
+                android:id="@+id/actorinitiatorid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="1dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/last_update_date"
+                app:layout_constraintTop_toBottomOf="@+id/last_update_date" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
